@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">        
+        <title>Sustentabilidade Agrinho</title>
+        <link rel="stylesheet" href="css/styles.scss">
+        <link rel="stylesheet" href="styles.css">
+
+      
+        
+    </head>
+
+    <body>
+
+    <div class="wrapper">
+        <img src="cookie.png" alt="cookie">
+
+      <div class="content">
+        <header>Cookies?</header>
+      
+        <div class="buttons">
+            <button class="item">Aceito</button>
+            <a href="#" class="item">Saber mais</a>
+        </div>
+      </div>
+    </div>
+     
+
+
+
+
+        <header class="cabecalho">
+             <img class="imagem-cabecalho" src="logo cinza.png" alt="minha logo">
+             <nav>
+                <ul class="cabecalho-topico">
+                    <li class="hover-underline-animation"><a href="acoes.html" class="hover-underline-animation"> Ações que transformam o Mundo </a></li>
+                </ul>
+
+                <div class="conteiner">
+                <div class="center">
+                  <button class="btn">
+                    <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                    </svg>
+                    <span>Contato</span>
+                  </button>
+                </div>
+              </div>
+
+             </nav>
+        </header>
+            <section class="agrinho">
+                <div class="container">
+                    <span>A</span>
+                    <span>G</span>
+                    <span>R</span>
+                    <span>I</span>
+                    <span>N</span>
+                    <span>H</span>
+                    <span>O</span>
+                        <br>
+                    <span>P</span>
+                    <span>R</span>
+                    <span>O</span>
+                    <span>G</span>
+                    <span>R</span>
+                    <span>A</span>
+                    <span>M</span>
+                    <span>A</span>
+                    <span>Ç</span>
+                    <span>Ã</span>
+                    <span>O</span>
+                </br>
+                    <span>2</span>
+                    <span>0</span>
+                    <span>2</span>
+                    <span>3</span>
+                </div>
+                <img class="agrinho-imagem" src="AGRINHO2.JPG" alt="imagem do agrinho">
+            </section>
+
+    <footer class="rodape">
+        <img class="imagem-rodape" src="logo azulada.png" alt="minha logo">
+        <p class="Copyright">&copy; Copyright Agrinho 2023</p>
+
+        <script>
+            const cookieBox = document.querySelector(".wrapper"),
+            acceptBtn = cookieBox.querySelector("button");
+            acceptBtn.onclick = ()=>{
+             
+              document.cookie = "CookieBy=MRprog; max-age="+60*60*24*30;
+              if(document.cookie){ 
+                cookieBox.classList.add("hide"); 
+              }else{ 
+                alert("O cookie não pode ser definido! Desbloqueie este site da configuração de cookies do seu navegador.");
+              }
+            }
+            let checkCookie = document.cookie.indexOf("CookieBy=CodingNepal");
+           
+            checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
+          </script>
+
+    </footer>
+    </body>
+</html>
