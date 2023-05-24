@@ -3,105 +3,76 @@
 
     <head>
         <meta charset="UTF-8">        
-        <title>Sustentabilidade Agrinho</title>
-        <link rel="stylesheet" href="css/styles.scss">
-        <link rel="stylesheet" href="styles.css">
+        <title>Agrinho</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
       
         
     </head>
 
     <body>
-
-    <div class="wrapper">
-        <img src="cookie.png" alt="cookie">
-
-      <div class="content">
-        <header>Cookies?</header>
-      
-        <div class="buttons">
-            <button class="item">Aceito</button>
-            <a href="#" class="item">Saber mais</a>
-        </div>
-      </div>
-    </div>
-     
-
-
-
-
-        <header class="cabecalho">
-             <img class="imagem-cabecalho" src="logo cinza.png" alt="minha logo">
-             <nav>
-                <ul class="cabecalho-topico">
-                    <li class="hover-underline-animation"><a href="acoes.html" class="hover-underline-animation"> Ações que transformam o Mundo </a></li>
-                </ul>
-
-                <div class="conteiner">
-                <div class="center">
-                  <button class="btn">
-                    <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-                    </svg>
-                    <span>Contato</span>
-                  </button>
-                </div>
+       
+      <header>
+        <nav>
+          <div class="navbar">
+            <i class='bx bx-menu'></i>
+            <div class="logo"><a href="#">Agrinho Programação</a></div>
+            <div class="nav-links">
+              <div class="sidebar-logo">
+                <span class="logo-name"></span>
+                <i class='bx bx-x' ></i>
               </div>
+              <ul class="links">
+                <li><a href="#">Início</a></li>
+                <li>
+                  <a href="#">Mudar o Mundo</a>
+                  <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                  <ul class="htmlCss-sub-menu sub-menu">
+                    <li><a href="acoes.html">Ações</a></li>
+                    <li><a href="#">Pequenas Ações</a></li>
+                    <li class="more">
+                      <span><a href="#">Atitudes</a>
+                      <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                    </span>
+                      <ul class="more-sub-menu sub-menu">
+                        <li><a href="voluntario.html">Ser Voluntário</a></li>
+                        <li><a href="#">Doador de sangue</a></li>
+                        <li><a href="#">Consumo Consciente</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a>Energia Limpa</a>
+                  <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                  <ul class="js-sub-menu sub-menu">
+                    <li><a href="energia.html">Resumo</a></li>
+                    <li><a href="#">Solar</a></li>
+                    <li><a href="#">Hidrelétrica</a></li>
+                    <li><a href="#">Geotérmica</a></li>
+                    <li><a href="#">Biomasssa</a></li>
+                    <li><a href="#">Eólica</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Termos</a></li>
+                <li><a href="#">Contato</a></li>
+              </ul>
+            </div>
+            <div class="search-box">
+              <i class='bx bx-search'></i>
+              <div class="input-box">
+                <input type="text" placeholder="É só de Decoração Mesmo">
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
 
-             </nav>
-        </header>
-            <section class="agrinho">
-                <div class="container">
-                    <span>A</span>
-                    <span>G</span>
-                    <span>R</span>
-                    <span>I</span>
-                    <span>N</span>
-                    <span>H</span>
-                    <span>O</span>
-                        <br>
-                    <span>P</span>
-                    <span>R</span>
-                    <span>O</span>
-                    <span>G</span>
-                    <span>R</span>
-                    <span>A</span>
-                    <span>M</span>
-                    <span>A</span>
-                    <span>Ç</span>
-                    <span>Ã</span>
-                    <span>O</span>
-                </br>
-                    <span>2</span>
-                    <span>0</span>
-                    <span>2</span>
-                    <span>3</span>
-                </div>
-                <img class="agrinho-imagem" src="AGRINHO2.JPG" alt="imagem do agrinho">
-            </section>
 
-    <footer class="rodape">
-        <img class="imagem-rodape" src="logo azulada.png" alt="minha logo">
-        <p class="Copyright">&copy; Copyright Agrinho 2023</p>
 
-        <script>
-            const cookieBox = document.querySelector(".wrapper"),
-            acceptBtn = cookieBox.querySelector("button");
-            acceptBtn.onclick = ()=>{
-             
-              document.cookie = "CookieBy=MRprog; max-age="+60*60*24*30;
-              if(document.cookie){ 
-                cookieBox.classList.add("hide"); 
-              }else{ 
-                alert("O cookie não pode ser definido! Desbloqueie este site da configuração de cookies do seu navegador.");
-              }
-            }
-            let checkCookie = document.cookie.indexOf("CookieBy=CodingNepal");
-           
-            checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
-          </script>
 
-    </footer>
+      <script src="script.js"></script>
+
     </body>
 </html>
