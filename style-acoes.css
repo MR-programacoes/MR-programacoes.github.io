@@ -7,6 +7,21 @@ body{
   overflow-wrap: break-word;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
+.paragrafo span{
+  display: block;
+  opacity: 0;
+  animation: reveal 0.7s forwards var(--d);
+}
+
+@keyframes reveal {
+  from { transform: translateY(20px); }
+  to { opacity: 1; transform: none; }
+}
+
 .conteiner{
   max-width: 1200px;
   margin: auto;
@@ -147,11 +162,11 @@ section.modulo.parallax-2{
 }
 
 section.modulo.parallax-3{
-  background-image: url(https://korui.com.br/wp-content/uploads/2022/02/planeta.jpg);
+  background-image: url(https://tecnomeca.com.br/wp-content/uploads/2020/02/Dia-Mundial-da-Justi%C3%A7a-Social-promove-a-igualdade-entre-todos-1.jpg);
 }
 
 section.modulo.parallax-4{
-  background-image: url(https://www.cleanipedia.com/images/00d1hxgfwfa6/5VbxMeFHznrtfIKDvD4eIE/44f0cf349ea3169f43624b74394d39ae/NS5qcGc/944w-629h/como-mudar-o-mundo.jpg);
+  background-image: url(https://cer.sebrae.com.br/wp-content/uploads/2020/12/GettyImages-1199706305.jpg);
 }
 
 section.modulo.parallax h1{

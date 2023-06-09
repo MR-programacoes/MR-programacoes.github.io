@@ -50,7 +50,7 @@ nav ul a::after{
     top:0;
     left:0px;
     border-radius: 20px;
-    background-color: #3E8DA8;
+    background-color: #808fff;
     z-index: -1;
     transition: 0.5s;
 }
@@ -69,7 +69,7 @@ nav ul a:hover:after{
 .main-content h1 {
     font-size: 60px;
     letter-spacing: 1px;
-    color: #3E8DA8;
+    color: #7c84bd;
 }
 .main-content p{
     margin-top: 10px;
@@ -95,7 +95,7 @@ nav ul a:hover:after{
     position: absolute;
     right: 9%;
     bottom: 20%;
-    right: 20px;
+    right: 180px;
 }
 .box{
     display: flex;
@@ -152,4 +152,5 @@ nav ul a:hover:after{
 }
 .social-links i:hover{
     transform: translateY(-5px);
+    text-decoration: none;
 }
