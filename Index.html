@@ -5,71 +5,249 @@
         <meta charset="UTF-8">        
         <title>Agrinho</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="minha-logo.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="eolica-logo.ico" type="image/x-icon">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
 integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-      
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
         
     </head>
 
     <body>
-       
-      <header>
-        <nav>
-          <div class="navbar">
-            <i class='bx bx-menu'></i>
-            <div class="logo"><a href="#">Agrinho Programação</a></div>
-            <div class="nav-links">
-              <div class="sidebar-logo">
-                <span class="logo-name"></span>
-                <i class='bx bx-x' ></i>
-              </div>
-              <ul class="links">
-                <li><a href="#">Início</a></li>
-                <li>
-                  <a href="#">Mudar o Mundo</a>
-                  <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
-                  <ul class="htmlCss-sub-menu sub-menu">
-                    <li><a href="acoes.html">Ações</a></li>
-                    <li class="more">
-                      <span><a href="#">Atitudes</a>
-                      <i class='bx bxs-chevron-right arrow more-arrow'></i>
-                    </span>
-                      <ul class="more-sub-menu sub-menu">
-                        <li><a href="voluntario.html">Ser Voluntário</a></li>
-                        <li><a href="sangue.html">Doador de sangue</a></li>
-                        <li><a href="consumo.html">Consumo Consciente</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a>Energia Limpa</a>
-                  <i class='bx bxs-chevron-down js-arrow arrow '></i>
-                  <ul class="js-sub-menu sub-menu">
-                    <li><a href="energia.html">Resumo</a></li>
-                    <li><a href="solar.html">Solar</a></li>
-                    <li><a href="hidreletrica.html">Hidrelétrica</a></li>
-                    <li><a href="geotermica.html">Geotérmica</a></li>
-                    <li><a href="biomasssa.html">Biomasssa</a></li>
-                    <li><a href="maremotriz.html">Maremotriz</a></li>
-                    <li><a href="eolica.html">Eólica</a></li>
-                  </ul>
-                </li>
-                <li><a href="termos.html">Termos</a></li>
-                <li><a href="contato.html">Contato</a></li>
-              </ul>
-            </div>
-            <div class="search-box">
-              <i class='bx bx-search'></i>
-              <div class="input-box">
-                <input type="text" placeholder="É só de Decoração Mesmo">
-              </div>
-            </div>
+
+        <title>Projeto Agrinho</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="#" class="nav__logo">
+                         Projeto Agrinho
+                    </a>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__toggle-menu"></i>
+                        <i class="ri-close-line nav__toggle-close"></i>
+                    </div>
+                </div>
+
+                <!--=============== NAV MENU ===============-->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        
+
+                        <!--=============== DROPDOWN 1 ===============-->
+                        <li class="dropdown__item">                      
+                            <div class="nav__link dropdown__button">
+                                Ações que transformam o mundo <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-flashlight-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Ações Que transformam o mundo</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="acoes.html" class="dropdown__link">Ações</a>
+                                            </li>
+                                            <li>
+                                                <a href="sustentabilidade-ambiental.html" class="dropdown__link">Sustentabilidade Ambiental</a>
+                                            </li>
+                                            <li>
+                                                <a href="justica-igualdade.html" class="dropdown__link">Justiça Social e Igualdade</a>
+                                            </li>
+                                            <li>
+                                              <a href="educacao-empoderamento.html" class="dropdown__link">Educação e Empoderamento</a>
+                                          </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-heart-3-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Atitudes que transformam o Mundo</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="voluntario.html" class="dropdown__link">Seja um Voluntário</a>
+                                            </li>
+                                            <li>
+                                                <a href="sangue.html" class="dropdown__link">Seja um Doador de sangue</a>
+                                            </li>
+                                            <li>
+                                                <a href="consumo.html" class="dropdown__link">Seja um consumidor consciente</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                          <i class="ri-heart-add-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Pequenas Ações que transformam o Mundo</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="plastico.html" class="dropdown__link">Reduza o consumo de plástico</a>
+                                            </li>
+                                            <li>
+                                                <a href="economize.html" class="dropdown__link">Economize energia</a>
+                                            </li>
+                                            <li>
+                                                <a href="pratique-reciclagem.html" class="dropdown__link">Pratique reciclagem</a>
+                                            </li>
+                                            <li>
+                                                <a href="social-ambiental.html" class="dropdown__link">Apoie Causas sociais e ambientais</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    
+                                </div>
+                            </div>
+                        </li>
+
+                        <!--=============== DROPDOWN 2 ===============-->
+                        <li class="dropdown__item">
+                            <div class="nav__link dropdown__button">
+                                Energia<i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                          <i class="ri-leaf-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Energia limpa</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="energia.html" class="dropdown__link">Resumo das energias</a>
+                                            </li>
+                                        
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                          <i class="ri-lightbulb-flash-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Diferentes tipos de energia limpa</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="solar.html" class="dropdown__link">Solar</a>
+                                            </li>
+                                            <li>
+                                                <a href="hidreletrica.html" class="dropdown__link">Hidrelétrica</a>
+                                            </li>
+                                            <li>
+                                                <a href="geotermica.html" class="dropdown__link">Geotérmica</a>
+                                            </li>
+                                            <li>
+                                              <a href="biomasssa.html" class="dropdown__link">Biomassa</a>
+                                          </li>
+                                          <li>
+                                            <a href="maremotriz.html" class="dropdown__link">Maremotriz</a>
+                                        </li>
+                                        <li>
+                                          <a href="eolica.html" class="dropdown__link">Eólica</a>
+                                      </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-apps-2-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Outros</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="itaipu.html" class="dropdown__link">Itaipu Bi-nacional</a>
+                                            </li>
+                                  
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                       
+
+                        <!--=============== DROPDOWN 3 ===============-->
+                        <li class="dropdown__item">                        
+                            <div class="nav__link dropdown__button">
+                                Importantes <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-community-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Entre em contato</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="https://github.com/MR-programacoes" class="dropdown__link">Entre em contato! (Github)</a>
+                                            </li>
+                                            <li>
+                                                <a href="contato.html" class="dropdown__link">Contato</a>
+                                            </li>
+        
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-shield-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Segurança e Cookies</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="cookies.html" class="dropdown__link">Configuração de Cookies</a>
+                                            </li>
+                                            <li>
+                                                <a href="termos.html" class="dropdown__link">Política de privacidade</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+
+        <div id="cookiePopup" class="hide">
+            <img src="cookie.png" />
+            <p>
+                O site usa cookies para fornecer sua experiência de navegação e
+                informação relevante. Antes de continuar a usar nosso site, você concorda &
+                aceita nosso termo de <a href="termos.html">Política de privacidade e cookies.</a>
+            </p>
+            <button id="acceptCookie">Aceito</button>
           </div>
-        </nav>
-      </header>
 
 
       <footer>
