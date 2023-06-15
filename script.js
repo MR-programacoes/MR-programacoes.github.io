@@ -73,37 +73,26 @@ const removeStyle = () =>{
 addEventListener('resize', removeStyle)
 
 
-let popUp = document.getElementById("cookiePopup");
+const cookieBox = document.querySelector(".wrapper"),
+  buttons = document.querySelectorAll(".button");
 
-document.getElementById("acceptCookie").addEventListener("click", () => {
-  
-  let d = new Date();
-  
-  d.setMinutes(2 + d.getMinutes());
- 
-  document.cookie = "myCookieName=thisIsMyCookie; expires = " + d + ";";
-  
-  popUp.classList.add("hide");
-  popUp.classList.remove("show");
-});
+const executeCodes = () => {
+  //if cookie contains codinglab it will be returned and below of this code will not run
+  if (document.cookie.includes("codinglab")) return;
+  cookieBox.classList.add("show");
 
-const checkCookie = () => {
-  
-  let input = document.cookie.split("=");
-  
-  if (input[0] == "myCookieName") {
-    
-    popUp.classList.add("hide");
-    popUp.classList.remove("show");
-  } else {
-    
-    popUp.classList.add("show");
-    popUp.classList.remove("hide");
-  }
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      cookieBox.classList.remove("show");
+
+      //if button has acceptBtn id
+      if (button.id == "acceptBtn") {
+        //set cookies for 1 month. 60 = 1 min, 60 = 1 hours, 24 = 1 day, 30 = 30 days
+        document.cookie = "cookieBy= codinglab; max-age=" + 60 * 60 * 24 * 30;
+      }
+    });
+  });
 };
 
-window.onload = () => {
-  setTimeout(() => {
-    checkCookie();
-  }, 2000);
-};
+//executeCodes function will be called on webpage load
+window.addEventListener("load", executeCodes);
