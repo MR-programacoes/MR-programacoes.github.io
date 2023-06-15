@@ -1,8 +1,6 @@
-
 (function ($) {
     "use strict";
 
-    
     /*==================================================================
     [ Validate ]*/
     var name = $('.validate-input input[name="name"]');
@@ -10,53 +8,48 @@
     var subject = $('.validate-input input[name="subject"]');
     var message = $('.validate-input textarea[name="message"]');
 
-
-    $('.validate-form').on('submit',function(){
+    $('.validate-form').on('submit', function () {
         var check = true;
 
-        if($(name).val().trim() == ''){
+        if ($(name).val().trim() == '') {
             showValidate(name);
-            check=false;
+            check = false;
         }
 
-        if($(subject).val().trim() == ''){
+        if ($(subject).val().trim() == '') {
             showValidate(subject);
-            check=false;
+            check = false;
         }
 
-
-        if($(email).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
+        if ($(email).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
             showValidate(email);
-            check=false;
+            check = false;
         }
 
-        if($(message).val().trim() == ''){
+        if ($(message).val().trim() == '') {
             showValidate(message);
-            check=false;
+            check = false;
         }
 
         return check;
     });
 
-
-    $('.validate-form .input1').each(function(){
-        $(this).focus(function(){
-           hideValidate(this);
-       });
+    $('.validate-form .input1').each(function () {
+        $(this).focus(function () {
+            hideValidate(this);
+        });
     });
 
     function showValidate(input) {
         var thisAlert = $(input).parent();
-
         $(thisAlert).addClass('alert-validate');
     }
 
     function hideValidate(input) {
         var thisAlert = $(input).parent();
-
         $(thisAlert).removeClass('alert-validate');
     }
-    
+
     
 
 })(jQuery);
@@ -67,3 +60,15 @@
         navBar = document.querySelector(".nav-bar");
         navBar.classList.toggle("active");
     }
+
+
+    $(".mail-btn").on("click touchstart", function () {
+        $(this).addClass("fly");
+        that = this
+        setTimeout(function() {
+            $(that).removeClass("fly");
+        }, 5400)
+    });
+
+
+    
